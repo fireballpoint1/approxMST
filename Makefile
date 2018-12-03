@@ -1,4 +1,4 @@
-all: amst gen_graph exact_mst
+all: amst generate_graph exact_mst
 
 amst:
 	mpic++ $(@).cpp -o $(@)
@@ -10,5 +10,5 @@ exact_mst:
 	mpic++ $(@).cpp -o $(@)
 
 clean:
-	rm amst gen_graph exact_mst
+	rm amst generate_graph exact_mst
 
